@@ -1,24 +1,4 @@
-# quick-browser
+![Logo](Logo.png)
+# Quick Browser
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+A simple, open-source browser made in Electron.js for desktop-like experience with websites!
