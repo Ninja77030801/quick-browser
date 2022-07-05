@@ -1,17 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <div text-align="center">
+      <h2>Enter your desired URL below</h2>
+      <input v-model="url" />
+      <a v-bind:href="url"><button @click="forward">Go</button></a><br />
+   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+ export default {
+   name: 'App',
+   data() {
+    return {
+      url: ''
+    }
+   },
+   methods: {
+    forward() {
+    }
+   }
+ }
 </script>
 
 <style>
@@ -22,5 +30,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+button {
+  background-color: #258cdb;
+  color: white;
 }
 </style>
