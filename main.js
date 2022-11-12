@@ -9,8 +9,8 @@ function createWindow() {
             javascript: true
         }
     });
-    //win.loadURL("http://localhost:8080");
-    win.loadFile(`${__dirname}\\bin\\index.html`);
+    win.loadURL("http://localhost:8080");
+    //win.loadFile(`${__dirname}\\bin\\index.html`);
     win.removeMenu();
 }
 
