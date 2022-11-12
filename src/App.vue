@@ -2,7 +2,7 @@
    <div text-align="center">
       <h2>Enter your desired URL below</h2>
       <input v-model="url" />
-      <a v-bind:href="url"><button @click="forward">Go</button></a><br />
+      <button @click="forward">Go</button><br />
    </div>
 </template>
 
@@ -17,6 +17,7 @@
    },
    methods: {
     forward() {
+      open("http://"+this.url)
     }
    }
  }
